@@ -1,0 +1,158 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(./images/sunny.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 
+====== 
+City
+======
+*/
+
+nav {
+  display: grid;
+  grid-template-columns: no-repeat(4fr);
+}
+.site-title {
+  color: azure;
+  font-size: 40px;
+  width: 400px;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 25px;
+}
+
+.link {
+  grid-column: 4/4;
+  text-align: center;
+  margin-top: 40px;
+}
+.home {
+  text-decoration: none;
+  font-size: x-large;
+  color: papayawhip;
+}
+
+.section-title {
+  color: darkslateblue;
+  text-align: center;
+}
+
+.search-section {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  font-size: 35px;
+}
+.title-input {
+  color: lightsalmon;
+}
+.search-section input {
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: lightblue;
+  border-color: transparent;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.cities-center {
+  display: grid;
+  margin: 0 auto;
+  max-width: 40rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.city {
+  display: grid;
+  border-radius: 15px;
+  border: 2px solid lightyellow;
+  padding-left: 5px;
+}
+
+.country-color {
+  color: mediumseagreen;
+}
+
+.state-color {
+  color: orangered;
+}
+
+.city-color {
+  color: orchid;
+}
+
+.single-city {
+  margin-bottom: 10px;
+  width: 60px;
+  height: 25px;
+  background-color: orange;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.detail {
+  text-decoration: none;
+  color: white;
+}
+
+.loading {
+  text-align: center;
+  color: darkorange;
+}
+
+/* 
+====== 
+Single City
+======
+*/
+.weather {
+  text-align: center;
+}
+
+.weather-section {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.city-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.weather-info {
+  height: max-content;
+  width: fit-content;
+  margin: auto;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.city-data {
+  border-radius: 5px;
+  color: white;
+  background-color: lightseagreen;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* 
+====== 
+Error
+======
+*/
+.error-page {
+  display: flex;
+  justify-content: center;
+}
+.error-container {
+  text-align: center;
+  text-transform: capitalize;
+}
