@@ -9,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState("a");
   const [cities, setCities] = useState([]);
+  const [alert, setAlert] = useState(true);
 
   const fetchCities = useCallback(async () => {
     setLoading(true);
@@ -34,7 +35,9 @@ const AppProvider = ({ children }) => {
     fetchCities();
   }, [searchTerm, fetchCities]);
   return (
-    <AppContext.Provider value={{ loading, cities, setSearchTerm }}>
+    <AppContext.Provider
+      value={{ loading, cities, setSearchTerm, alert, setAlert }}
+    >
       {children}
     </AppContext.Provider>
   );
